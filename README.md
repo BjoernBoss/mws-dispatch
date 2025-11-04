@@ -12,7 +12,7 @@ To use this module, setup the `mws-base`. Then simply clone this repository into
 
 	$ git clone https://github.com/BjoernBoss/mws-dispatch.git modules/dispatch
 
-Afterwards, transpile the entire server application, and this module up in the `setup.js Run` method as:
+Afterwards, transpile the entire server application, and construct this module in the `setup.js Run` method as:
 
 ```JavaScript
 const m = await import("./dispatch/path-dispatch.js");
