@@ -21,7 +21,7 @@ export class PathDispatch implements libCommon.ModuleInterface {
 		}
 	}
 
-	private dispatch(client: libClient.HttpBaseClass): libCommon.ModuleInterface | null {
+	private dispatch(client: libClient.HttpBase): libCommon.ModuleInterface | null {
 		let bestMatch: string | null = null;
 
 		/* iterate over the mappings and look for the corresponding best handler */
