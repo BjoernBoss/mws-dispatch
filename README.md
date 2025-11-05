@@ -7,6 +7,8 @@ This repository is designed to be used with the [`MWS-Base`](https://github.com/
 It provides a module dispatcher, which uses the request `URL` to dispatch the request to multiple sub-modules.
 For this, the requests are afterwards translated, to let modules assume they are at the root.
 
+All mappings are managed by the created `PathDispatch` object. Sharing this object across multiple listened ports will therefore ensure each port shares the same mappings of the same modules.
+
 ## Using the Module
 To use this module, setup the `mws-base`. Then simply clone this repository into the modules directory:
 
